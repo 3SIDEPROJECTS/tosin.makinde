@@ -1,0 +1,32 @@
+
+.card-container {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+}
+
+.card {
+   min-height: 5vh;
+   width: 100%;
+   margin: 0.5em;
+
+   border: 1px solid #030303;
+   border-radius: 0.75em;
+}
+
+.card_details { padding: 1em; }
+
+.card-img {
+    border-radius: 0.75em 0.75em 0 0;
+    background-color: #959595;
+    width: 100%;
+    min-height: 100px;
+}
+
+.card > a { text-decoration: none; color: inherit; }
+
+.card_details > ul { padding: 0.5em 1em; }
+
+@media all and (min-width: 960px) {
+    .card { width: 45%; }
+}
