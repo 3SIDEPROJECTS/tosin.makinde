@@ -14,12 +14,12 @@ ul { padding: 0; }
 
 .menu{ margin: 0; }
 
-.sub { background-color: black; }
+/* .sub { background-color: #38008198; } */
 nav li > a {
     text-decoration: none;
 }
 
-.nav-link { background-color: #000; }
+.nav-link { background-color: #38008198; }
 .menu li a {
     font-size: 1em;
 }
