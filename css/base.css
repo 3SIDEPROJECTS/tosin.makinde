@@ -10,7 +10,7 @@ html {
 
 body{ margin: 0 }
 
-html, .menu{ background-color: #38008198; }
+html, .menu{ background-color: #1b0061; }
 
 main {
     display: block;
@@ -33,7 +33,7 @@ h1 { font-size: 10rem; margin: 0; }
 h2 { font-size: 4rem; }
 h1, h2 { font-family: 'Lalezar', cursive; }
 a { color: #f5f5f5; }
-a:hover { color: #000; }
+a:hover { color: rgb(233, 140, 0); }
 
 main p, .editorial .link {
     font-size: 1.8rem;
@@ -41,7 +41,7 @@ main p, .editorial .link {
     
 }
 
-.editorial .link > a { 
+.editorial .link > a, .media a { 
     padding-bottom: 10px;
     text-decoration: none; }
 
@@ -62,7 +62,7 @@ main p, .editorial .link {
     grid-gap: 1rem;
 }
 
-.tweets {
+.tweets_container {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
@@ -123,9 +123,9 @@ main p, .editorial .link {
         width: 90vw;
     }
 
-    .clients { width: 90vw; }
+    .clients, .tweets { width: 90vw; }
     
-    .container, .tweets {
+    .container, .tweets_container {
         display: block;
     }
     .tile{
