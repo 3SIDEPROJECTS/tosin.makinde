@@ -131,7 +131,7 @@ main p, .editorial .link {
     h1 { font-size: 6rem; }
     .name{ 
         position: fixed;
-        margin-top: 25vh; margin-bottom: 20vh; 
+        margin-top: 15vh; margin-bottom: 20vh; 
     }
     .about .text { 
         z-index: 4;
