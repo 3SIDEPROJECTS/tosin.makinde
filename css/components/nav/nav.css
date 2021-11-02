@@ -8,18 +8,21 @@ nav {
     width: 100vw;
     top: 0;
     z-index: 999;
+    background: rgba( 0,0,0, 0.6);
 }
 
 ul { padding: 0; }
 
-.menu{ margin: 0; }
+.menu{ 
+    margin: 0; 
+}
 
 /* .sub { background-color: #38008198; } */
 nav li > a {
     text-decoration: none;
 }
 
-.nav-link { background-color: #1b0061;; }
+.nav-link { background: rgba( 0,0,0, 0.6); }
 .menu li a {
     font-size: 1em;
 }

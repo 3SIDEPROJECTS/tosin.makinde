@@ -1,7 +1,9 @@
 //toggle menu button
 const toggle = document.querySelector(".toggle"),
 //menu
-menu = document.querySelector(".menu")
+menu = document.querySelector(".menu"),
+button = document.querySelector('.button'),
+text = document.querySelector('.text')
 
 console.log( toggle )
 console.log( menu )
@@ -56,3 +58,11 @@ for ( let item of items ) {
         item.addEventListener("keypress", toggleItem, false)
     }
 }
+
+button.addEventListener( 'click', function() {
+    text.style.display = 'block'
+}, false)
+
+text.addEventListener( 'click', function() {
+    text.style.display = 'none'
+}, false)
