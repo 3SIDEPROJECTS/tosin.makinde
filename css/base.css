@@ -9,6 +9,10 @@ html {
 
 body{ 
     margin: 0;
+    background-color: rgba(96,9,121,1);
+}
+
+.home {
     background: rgb(2,0,36);
     background: linear-gradient(144deg, rgba(2,0,36,1) 14%, rgba(96,9,121,1) 65%, rgba(0,212,255,1) 100%);
     background-size: 100vw 100vh;
