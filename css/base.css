@@ -133,6 +133,7 @@ main p, .editorial .link {
 @media all and (max-width: 650px){
     .button{ display: inline-block; }
     h1 { font-size: 6rem; }
+    h2 { font-size: 2rem; }
     .name{ 
         position: fixed;
         margin-top: 15vh; margin-bottom: 20vh; 
