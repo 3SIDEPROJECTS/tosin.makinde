@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Zen+Kaku+Gothic+Antique&display=swap');
 @import './remixicon/remixicon.css';
 @import './components/nav/nav.css';
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Zen+Kaku+Gothic+Antique&display=swap');
 
 html {
     font-size: 62.5%;
@@ -13,31 +13,15 @@ body{
     /* background-color: rgba(96,9,121,1); */
 }
 
-.home {
-    background: #fff;
-    /* background: rgb(2,0,36);
-    background: linear-gradient(144deg, rgba(2,0,36,1) 14%, rgba(96,9,121,1) 65%, rgba(0,212,255,1) 100%);
-    */
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-}
 
 main {
     display: block;
-    max-height: 100vh;
     margin: 10vh auto;
 }
-
-.about { width: 90vw; }
-.work, .media { width: 65vw; }
 
 body { 
     font-size: 1.4rem; 
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
-}
-
-header {
-    max-height: 70px;
 }
 
 h1 { font-size: 10rem; margin: 0; }
@@ -46,26 +30,10 @@ h1, h2 { font-family: 'Archivo Black', cursive; }
 a { color: #050505; }
 a:hover { color: rgb(233, 140, 0); }
 
-main p, .editorial .link {
+main p {
     font-size: 1.8rem;
     padding-bottom: 10px;
     
-}
-
-.editorial .link > a, .media a { 
-    padding-bottom: 10px;
-    text-decoration: none; 
-}
-
-.about { text-shadow: 2px 2px #000000; }
-.about .text {
-    width: 45vw;
-    margin: 10vh 0;
-}
-
-.name { 
-    z-index: 4; 
-    margin-top: 30vh;
 }
 
 .container {
@@ -74,133 +42,9 @@ main p, .editorial .link {
     grid-gap: 1rem;
 }
 
-.tweets_container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 5px 5px; 
-}
-
-.client {
-    padding: 10vh 0;
-}
-
-.tile img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.tweet {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.tile:nth-child(1) {
-    grid-column: span 4;
-    grid-row: span 2;
-}
-
-.tile:nth-child(2),
-.tile:nth-child(3) {
-    grid-column: span 2;
-}
-
-.tile:nth-child(4),
-.tile:nth-child(5){
-    grid-column: span 3;
-}
-
-.profile { 
-    z-index: -1;
-    position: fixed;
-    bottom: -20vh;
-    right: 0;
-    width: 45vw;
-    height: 120vh;
- }
-
- .profile img {
-     width: auto;
-     height: 100%;
- }
-
- .button {
-     text-shadow: none;
-     font-size: 1.5rem;
-     padding: 10px 20px;
-     background-color: #600979;
-     border-radius: 20px;
-     display: none;
- }
-
-.about {
-    & .polaroid {
-        width: 25vw; 
-        display: block;
-        margin: 0 auto;
-        padding-top: 10vh;
-        & img {
-            max-height: auto;
-            width: 100%;
-            
-        }
-    }
-}
-
 @media all and (max-width: 650px) {
-    .button { display: inline-block; }
     h1 { font-size: 6rem; }
     h2 { font-size: 3rem; }
-    .name { 
-        position: fixed;
-        margin-top: 15vh; margin-bottom: 20vh; 
-    }
-    .about .text { 
-        z-index: 4;
-        margin: 0;
-        display: none;
-        position: absolute;
-        padding: 20vh 20px;
-        top: 0;
-        left: 0;
-        background: rgba( 0,0,0, 0.9); 
-        width: 90vw;
-        height: auto;
-    }
-
-    .about, .name { margin-bottom: 0; }
-
-    .clients, .tweets { width: 90vw; }
-    
-    .container, .tweets_container {
-        display: block;
-    }
-    .tile {
-        margin-bottom: 1rem;
-    }
-
-    .tile img {
-        height: auto;
-        object-fit: contain;
-    }
-
-    main { margin: 20vh 20px; }
-
-    .profile {
-        left: 0;
-        bottom: 0;
-        width: 45vw;
-        height: 100vh;
-    }
-
-    .about {
-        margin: 10vh 20px;
-    & .polaroid {
-        width: 100%;
-    }
-    }
 }
 
 

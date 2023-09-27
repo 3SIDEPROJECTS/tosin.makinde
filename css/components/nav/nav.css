@@ -4,11 +4,13 @@
 nav {
     text-transform: uppercase;
     font-weight: 600;
+    background: #ffffff;
+    
     position: fixed;
     width: 100vw;
+    height: 70px;
     top: 0;
-    z-index: 999;
-    background: #ffffff;
+    z-index: 99;
 }
 
 ul { padding: 0; }

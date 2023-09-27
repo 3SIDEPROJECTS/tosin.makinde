@@ -1,0 +1,90 @@
+@import './css/base.css';
+
+.home {
+    background: #fff;
+    max-height: 100vh;
+}
+
+.name {
+    z-index: 4;
+    margin-top: 30vh;
+}
+
+.about { 
+    width: 90vw; 
+    text-shadow: 2px 2px #000;
+    
+    & .text {
+        width: 45vw;
+        margin: 10vh 0;
+    }
+   
+    & .polaroid {
+        width: 25vw;
+        display: block;
+        margin: 0 auto;
+        padding-top: 10vh;
+        & img {
+            max-height: auto;
+            width: 100%;
+        }
+    }
+}
+
+.button {
+    text-shadow: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #600979;
+    border-radius: 20px;
+    display: none;
+}
+
+.profile {
+    z-index: -1;
+    position: fixed;
+    bottom: -20vh;
+    right: 0;
+    width: 45vw;
+    height: 120vh;
+
+    & img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .name { 
+        position: fixed;
+        margin-top: 15vh;
+        margin-bottom: 0;
+    }
+    .button { display: inline-block; }
+
+    .about {
+        margin: 10vh 20px;
+        
+        & .text {
+            z-index: 4;
+            margin: 0;
+            display: none;
+            position: absolute;
+            padding: 20vh 20px;
+            top: 0;
+            left: 0;
+            background: rgba( 0,0,0, 0.9);
+            width: 90vw;
+            height: auto;
+        }
+
+        & .polaroid { width: 100%; }
+    }
+
+    .profile {
+        left: 0;
+        bottom: 0;
+        width: 45vw;
+        height: 100vh;
+    }
+}
