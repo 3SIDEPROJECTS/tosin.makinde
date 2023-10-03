@@ -1,0 +1,33 @@
+@import '../../css/base.css';
+
+.gallery > img {
+    width: 100%;
+}
+
+@media all and (min-width: 810px) {
+    .job {
+        
+        position: relative;
+        width: 100vw;
+        min-height: 200vh;
+        display: block;
+        margin: 100px auto;
+    }
+
+    .gallery {
+        display: inline-block;
+        width: 50%;
+        height: auto;
+        top: 0; 
+        position: relative; 
+    }
+    .desc {
+        display: block;
+        width: 25%;
+        /*display: inline-block;*/
+        position: sticky;
+        float: left;
+        top: 100px;
+        padding: 0 30px;
+    }
+} 

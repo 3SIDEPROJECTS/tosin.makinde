@@ -1,16 +1,24 @@
-@import '../../css/base.css';
+@import '../css/base.css';
 
 .gallery > img {
     width: 100%;
 }
 
-@media all and (min-width: 810px) {
+.job {
+    display: block;
+    position: relative;
+    margin: 100px auto;
+    
+    & section {
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (min-width: 810px) {
     .job {
-        
         position: relative;
-        width: 100vw;
         min-height: 200vh;
-        display: block;
         margin: 100px auto;
     }
 
@@ -21,6 +29,7 @@
         top: 0; 
         position: relative; 
     }
+
     .desc {
         display: block;
         width: 25%;

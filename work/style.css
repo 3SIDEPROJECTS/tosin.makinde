@@ -65,3 +65,23 @@ body {
     height: 100%;
     width: 100%;
 }
+
+@media screen and (max-width: 960px) {
+    .work {
+        width: 100vw;
+    }
+
+    .grid {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .grid-item {
+        width: 50vw;
+        height: 50vw;
+    }
+    
+    .editorial {
+        padding: 20px;
+    }
+}

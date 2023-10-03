@@ -6,24 +6,40 @@
 }
 
 .name {
+    position: fixed;
+    top: 0;
+    margin-left: 50vw;
     z-index: 4;
-    margin-top: 30vh;
+    margin-top: 45vh;
+    color: #c68646;
 }
 
-.about { 
-    width: 90vw; 
-    text-shadow: 2px 2px #000;
+.about {
+    height: 75vh; 
+    width: 90vw;  
     
     & .text {
+        position: fixed;
+        top: 0;
+        margin: 100px 0;
+        display: none;
         width: 45vw;
         margin: 10vh 0;
+        padding: 20px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.75);
+
+        & a { color: #fff; }
     }
    
     & .polaroid {
+        position: relative;
         width: 25vw;
         display: block;
         margin: 0 auto;
         padding-top: 10vh;
+        z-index: -1;
+
         & img {
             max-height: auto;
             width: 100%;
@@ -32,12 +48,14 @@
 }
 
 .button {
+    display: inline-block;
     text-shadow: none;
     font-size: 1.5rem;
     padding: 10px 20px;
-    background-color: #600979;
+    background-color: #c68646;
     border-radius: 20px;
-    display: none;
+    color: #fff;
+    
 }
 
 .profile {
@@ -54,10 +72,10 @@
     }
 }
 
-@media all and (max-width: 650px) {
+@media screen and (max-width: 650px) {
     .name { 
         position: fixed;
-        margin-top: 15vh;
+        margin-left: 10px;
         margin-bottom: 0;
     }
     .button { display: inline-block; }
@@ -67,15 +85,15 @@
         
         & .text {
             z-index: 4;
-            margin: 0;
-            display: none;
+            margin-top: 70px;
             position: absolute;
-            padding: 20vh 20px;
+            
             top: 0;
             left: 0;
-            background: rgba( 0,0,0, 0.9);
             width: 90vw;
             height: auto;
+
+            padding: 0 5vw;
         }
 
         & .polaroid { width: 100%; }

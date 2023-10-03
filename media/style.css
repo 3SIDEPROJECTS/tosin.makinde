@@ -1,12 +1,18 @@
 @import '../css/base.css';
 
 .media { 
-    width: 65vw; 
-    
+    width: 75vw; 
+    height: 75vh;
+
     & a {
         padding-bottom: 10px;
         text-decoration: none;
     }
+}
+
+.media video {
+    display: block; 
+    width: inherit; 
 }
 
 .tweets_container {
@@ -23,6 +29,9 @@
 }
 
 @media all and (max-width: 650px) {
-    .tweets { width: 90vw; }
-    .tweets-container { display: block; }
+    .media { 
+        height: 50vh;
+        padding-top: 25vh;
+        width: 100vw; 
+    }
 }
