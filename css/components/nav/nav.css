@@ -24,11 +24,12 @@ nav li > a {
     text-decoration: none;
 }
 
-.nav-link { background: rgba( 0,0,0, 0.6); }
-.menu li a {
+.nav-link { background: #000; }
+.menu .item a {
     font-size: 1em;
-    color: #050505;
+    color: #fff;
 }
+
 
 .menu, .submenu {
     list-style-type: none;
@@ -61,6 +62,8 @@ nav li > a {
         align-items: flex-start;
         flex-wrap: nowrap;
         background: none;
+        
+        & .item a { color: #050505; }
     }
 
     .nav-link { background: none; }

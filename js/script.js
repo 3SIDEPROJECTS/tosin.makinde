@@ -3,8 +3,8 @@ const toggle = document.querySelector(".toggle"),
 //menu
 menu = document.querySelector(".menu"),
 button = document.querySelector('.button'),
-text = document.querySelector('.text')
-
+text = document.querySelector('.text'),
+footer = document.querySelector('footer')
 console.log( toggle )
 console.log( menu )
 
@@ -61,8 +61,10 @@ for ( let item of items ) {
 
 button.addEventListener( 'click', function() {
     text.style.display = 'block'
+    footer.style.display = 'none'
 }, false)
 
 text.addEventListener( 'click', function() {
     text.style.display = 'none'
+    footer.style.display = ''
 }, false)

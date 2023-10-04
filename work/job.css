@@ -4,19 +4,22 @@
     width: 100%;
 }
 
-.job {
-    display: block;
-    position: relative;
-    margin: 100px auto;
-    
-    & section {
-        padding: 0 20px;
-    }
-
-}
-
-@media screen and (min-width: 810px) {
     .job {
+        display: block;
+        position: relative;
+        margin: 100px auto;
+    
+        & section {
+            padding: 0 20px;
+        }
+
+    }   
+
+
+@media screen and (min-width: 860px) {
+
+    
+ .job {
         position: relative;
         min-height: 200vh;
         margin: 100px auto;
@@ -39,4 +42,7 @@
         top: 100px;
         padding: 0 30px;
     }
-} 
+
+
+
+}

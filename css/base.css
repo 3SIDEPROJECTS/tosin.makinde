@@ -49,14 +49,14 @@ main p {
 
 footer {
     background-color: #f0f0f0; 
-    height: 5vh;
+    height: 10vh;
     width: 100vw;
     
     & .contact {
         width: 90vw;
         display: block;
         margin: 0 auto;
-        padding: 10px;
+        padding: 2vh;
    
         & .social {
             line-height: 0.5;
