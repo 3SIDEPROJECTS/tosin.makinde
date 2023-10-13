@@ -15,13 +15,19 @@
 
     }   
 
+.gallery {
+    & video {
+        display: block;
+        width: 100%;
+    }
+}
 
 @media screen and (min-width: 860px) {
 
     
  .job {
         position: relative;
-        min-height: 200vh;
+        min-height: 70vh;
         margin: 100px auto;
     }
 

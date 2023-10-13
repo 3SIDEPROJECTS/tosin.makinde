@@ -1,0 +1,14 @@
+@import '../css/base.css';
+
+.about {
+    min-height: 70vh; 
+    width: 65vw;
+      
+}
+
+@media screen and (max-width: 650px) {
+    .about {
+        width: 90vw;
+        margin: 10vh 20px;
+    }
+}
