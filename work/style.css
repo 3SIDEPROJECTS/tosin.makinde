@@ -1,45 +1,83 @@
-@import '../css/components/nav/nav.css';
+@import '../css/base.css';
 
 body {
     margin: 0;
 }
 
-main {
-    width: 65vw;
+.work {
+    width: 90vw; 
     display: block;
-    margin: 20vh auto;    
+    margin: 100px auto;    
+}
+
+.editorial {
+
+    padding: 20px 0;    
+
+    & a { text-decoration: none; }
+    & .link {
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; 
-    grid-gap: 20px 20px; 
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;  
 }
 
-.grid .grid-item {
+.grid-item {
     background-color: orange;
-    height: 20vh;
-    width: 100%; 
+    height: 30vw;
+    width: 30vw;
+}
+
+.grid-item-title {
+    height: auto;
+    width: inherit;
+    text-transform: uppercase; 
+    padding-bottom: 20px;     
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 3rem;
 }
 
 .grid-item a {
     position: absolute;
-    visibility: hidden;
-    z-index: 1;
-    background: rgba(255,255,255, 0.5);
     height: inherit;
     width: inherit;
+
+    /*visibility: hidden;*/
+    z-index: 1;
+    background: rgba(255,255,255, 0.5);
 }
 
-.grid-item a::hover {
+/*.grid-item a::hover {
     visibility: visible;
-}
+}*/
 
-.grid-item .grid-item-img {
+.grid-item img {
     position: relative;
     z-index: 0;
     object-fit: cover;
-    height: inherit;
-    width: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .work {
+        width: 100vw;
+    }
+
+    .grid {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .grid-item {
+        width: 50vw;
+        height: 50vw;
+    }
 }
