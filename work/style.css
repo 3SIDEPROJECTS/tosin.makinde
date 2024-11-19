@@ -1,9 +1,5 @@
 @import '../css/base.css';
 
-body {
-    margin: 0;
-}
-
 .work {
     width: 90vw; 
     display: block;
@@ -11,13 +7,21 @@ body {
 }
 
 .editorial {
-
+    & h2 { padding: 0 20px; }
     padding: 20px 0;    
 
     & a { text-decoration: none; }
     & .link {
         font-size: 2rem;
         padding-bottom: 10px;
+    }
+}
+
+.expertise {
+    padding: 0 20px;
+    font-size: 1.8rem;
+    & ul {
+        padding: 0 15px;
     }
 }
 
